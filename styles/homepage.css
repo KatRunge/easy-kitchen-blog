@@ -1,5 +1,4 @@
 .main-content {
-  margin: 0;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 20px;
   grid-template-areas:
