@@ -1,10 +1,12 @@
 .main-content {
-  grid-template-columns: repeat(8, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 200px;
   grid-gap: 20px;
   grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
+    "hd hd"
+    "main main  "
+    "ft ft ";
 }
 
 .header-section {
@@ -18,4 +20,25 @@
 
 .footer-content {
   grid-area: ft;
+}
+
+@media (min-width: 301px) {
+  .main-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "hd hd hd hd"
+      "main main main main"
+      "ft ft ft ft";
+  }
+}
+
+@media (min-width: 600px) {
+  .main-content {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
 }
