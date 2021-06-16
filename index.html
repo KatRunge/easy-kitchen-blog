@@ -7,10 +7,21 @@
     <meta name="description" content="Easy recipes blog" />
     <title>Easy Kitchen Blog</title>
     <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- headlines font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- body font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="main-content">
     <header class="header-section">
-      <nav>
+      <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html">Homepage</a></li>
           <li class="nav-item"><a href="blogpost.html">Blogpost</a></li>
@@ -18,31 +29,39 @@
         </ul>
       </nav>
       <section class="fullwidth-header">
-        <h1>Welcome to easy recipes blog</h1>
+        <h1 class="fullwidth-header-title">Welcome to easy recipes blog</h1>
       </section>
     </header>
-    <main class="cards-content">
+    <main class="card-wrapper">
       <div class="card">
-        <img src="./assets/recipe-1.jpg" alt="a vegetarian recipe" />
-        <h3>New vegetarian recipe</h3>
-        <p>
+        <img
+          src="./assets/recipe-1.jpg"
+          alt="a vegetarian recipe"
+          class="card-image"
+        />
+        <h3 class="card-title">Vegetarian Recipe</h3>
+        <p class="card-text">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled
         </p>
-        <button type="button"><a href="./blogpost.html">To article</a></button>
+        <button class="card-btn" type="button"><a href="./blogpost.html">To article</a></button>
       </div>
       <div class="card">
-        <img src="./assets/recipe-2.jpg" alt="a vegetarian recipe" />
-        <h3>New vegetarian recipe</h3>
-        <p>
+        <img
+          src="./assets/recipe-2.jpg"
+          alt="a vegetarian recipe"
+          class="card-image"
+        />
+        <h3 class="card-title">Asian Soup Recipe</h3>
+        <p class="card-text">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled
         </p>
-        <button type="button"><a href="./blogpost.html">To article</a></button>
+        <button class="card-btn" type="button"><a href="./blogpost.html">To article</a></button>
       </div>
     </main>
     <footer class="footer-content">
