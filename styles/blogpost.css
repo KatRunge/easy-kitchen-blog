@@ -1,0 +1,125 @@
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "hd hd hd hd"
+    "main main main main"
+    "ft ft ft ft";
+}
+
+/* above the fold section */
+
+.header-section {
+  grid-area: hd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* navigation styles */
+
+.navigation {
+  background-color: #000;
+  padding: 25px 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.nav-list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 400px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.content-section {
+  grid-area: main;
+}
+
+/* Biography */
+
+.biography {
+    display: flex;
+}
+
+/* footer styles */
+
+.footer-section {
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-list-item {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+li.footer-list-item:last-child {
+  padding-right: 0;
+}
+
+/* For tablets */
+
+@media (min-width: 600px) {
+  .main-content {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 40px 30px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+
+  .nav-item {
+    font-size: 22px;
+  }
+}
