@@ -147,7 +147,7 @@ button:hover {
 }
 
 .footer-title {
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 0;
 }
 
@@ -157,14 +157,12 @@ button:hover {
 }
 
 .footer-list-item {
-  display: inline-block;
-  padding-right: 50px;
+  margin-bottom: 15px;
 }
 
 li.footer-list-item:last-child {
   padding-right: 0;
 }
-
 
 @media (min-width: 600px) {
   .main-content {
@@ -190,6 +188,16 @@ li.footer-list-item:last-child {
 
   .card {
     margin: 0 40px 40px;
+  }
+
+  .footer-title {
+    font-size: 40px;
+  }
+
+  .footer-list-item {
+    display: inline-block;
+    padding-right: 50px;
+    margin-bottom: 0;
   }
 }
 
