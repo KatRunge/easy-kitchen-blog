@@ -73,7 +73,7 @@ button:hover {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   max-width: 400px;
 }
