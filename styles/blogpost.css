@@ -74,6 +74,7 @@ body {
 .content {
   margin: 0 auto 50px;
   max-width: 820px;
+  padding: 20px;
 }
 
 .content-title {
@@ -85,10 +86,35 @@ body {
 
 .biography {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 40px;
+  justify-content: center;
   background-color: beige;
-  margin: 50px 60px;
+  margin: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.bio-content {
+  padding: 0 20px;
+}
+
+.bio-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.image-quote {
+  margin-top: 25px;
+}
+
+.content-list {
+  margin-top: 45px;
+}
+
+.content-list-item {
+  margin-bottom: 15px;
 }
 
 /* footer styles */
@@ -137,5 +163,35 @@ li.footer-list-item:last-child {
 
   .nav-item {
     font-size: 22px;
+  }
+
+  .biography {
+    align-items: center;
+    padding: 40px;
+    margin: 50px 60px;
+  }
+
+  .bio-content {
+    padding: 0 60px;
+  }
+
+  .content {
+    padding: 50px 60px;
+  }
+
+  .content-paragraph {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .content-list {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .biography {
+    flex-direction: row;
+    text-align: left;
   }
 }
