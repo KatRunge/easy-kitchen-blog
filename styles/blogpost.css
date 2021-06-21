@@ -69,6 +69,7 @@
 
 .content-list-item {
   margin-bottom: 15px;
+  /* font-size: 18px; */
 }
 
 /* For tablets */
@@ -104,6 +105,10 @@
   }
 
   .content-list {
+    font-size: 22px;
+  }
+
+  .content-list-item {
     font-size: 22px;
   }
 }
