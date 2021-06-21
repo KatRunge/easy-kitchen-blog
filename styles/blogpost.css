@@ -1,16 +1,4 @@
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-}
-
-.main-content {
+.bp-main-content {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -29,40 +17,6 @@ body {
   grid-area: hd;
   display: flex;
   flex-direction: column;
-}
-
-/* navigation styles */
-
-.navigation {
-  background-color: #000;
-  padding: 25px 20px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation a:hover {
-  text-decoration: underline;
-}
-
-.nav-list {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  font-size: 14px;
-  font-weight: 300;
-  max-width: 400px;
-}
-
-.nav-item {
-  margin: 0 10px;
 }
 
 /* Recipe */
@@ -117,41 +71,10 @@ body {
   margin-bottom: 15px;
 }
 
-/* footer styles */
-
-.footer-section {
-  grid-area: ft;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  background-color: #000;
-  color: white;
-  text-align: center;
-}
-
-.footer-title {
-  font-size: 20px;
-  margin-top: 0;
-}
-
-.footer-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-list-item {
-  margin-bottom: 15px;
-}
-
-li.footer-list-item:last-child {
-  padding-right: 0;
-}
-
 /* For tablets */
 
 @media (min-width: 600px) {
-  .main-content {
+  .bp-main-content {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 40px 30px;
     grid-template-areas:
@@ -160,14 +83,11 @@ li.footer-list-item:last-child {
       "ft ft ft ft ft ft ft ft";
   }
 
-  .nav-item {
-    font-size: 22px;
-  }
-
   .biography {
     align-items: center;
     padding: 40px;
-    margin: 50px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .bio-content {
@@ -185,16 +105,6 @@ li.footer-list-item:last-child {
 
   .content-list {
     font-size: 22px;
-  }
-
-  .footer-title {
-    font-size: 40px;
-  }
-
-  .footer-list-item {
-    display: inline-block;
-    padding-right: 50px;
-    margin-bottom: 0;
   }
 }
 

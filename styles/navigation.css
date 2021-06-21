@@ -1,0 +1,40 @@
+.navigation {
+  background-color: #000;
+  padding: 25px 20px;
+  color: white;
+  letter-spacing: 0.2em;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.nav-list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 400px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+@media (min-width: 600px) {
+  .nav-item {
+    font-size: 22px;
+  }
+
+  .nav-list {
+    max-width: 600px;
+  }
+}

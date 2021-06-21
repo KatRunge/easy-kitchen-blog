@@ -1,30 +1,9 @@
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
+@import "./blogpost.css";
+@import "./general-styles.css";
+@import "./navigation.css";
+@import "./footer.css";
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-button {
-  padding: 15px 40px;
-  margin: 20px;
-  background-color: #000;
-  border: 0;
-}
-
-button a {
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-}
-
-button:hover {
-  background-color: #666;
-}
+/* Homepage styles */
 
 .main-content {
   width: 100%;
@@ -48,40 +27,6 @@ button:hover {
   flex-direction: column;
 }
 
-/* navigation styles */
-
-.navigation {
-  background-color: #000;
-  padding: 25px 20px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation a:hover {
-  text-decoration: underline;
-}
-
-.nav-list {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  font-size: 14px;
-  font-weight: 300;
-  max-width: 400px;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
 /* main title section */
 
 .fullwidth-header {
@@ -100,7 +45,6 @@ button:hover {
 .fullwidth-header-title {
   padding: 0 20px;
   text-align: center;
-  font-size: 30px;
   text-shadow: #0000007d 1px 0 10px;
 }
 
@@ -134,35 +78,19 @@ button:hover {
   text-align: center;
 }
 
-/* footer styles */
+.card-btn {
+  margin: 20px;
+}
 
-.footer-content {
-  grid-area: ft;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  background-color: #000;
+a.card-btn-link {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+a:hover.card-btn-link {
   color: white;
-  text-align: center;
-}
-
-.footer-title {
-  font-size: 20px;
-  margin-top: 0;
-}
-
-.footer-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-list-item {
-  margin-bottom: 15px;
-}
-
-li.footer-list-item:last-child {
-  padding-right: 0;
 }
 
 @media (min-width: 600px) {
@@ -175,30 +103,8 @@ li.footer-list-item:last-child {
       "ft ft ft ft ft ft ft ft";
   }
 
-  .nav-item {
-    font-size: 22px;
-  }
-
-  .fullwidth-header-title {
-    font-size: 45px;
-  }
-
-  .nav-list {
-    max-width: 600px;
-  }
-
   .card {
     margin: 0 40px 40px;
-  }
-
-  .footer-title {
-    font-size: 40px;
-  }
-
-  .footer-list-item {
-    display: inline-block;
-    padding-right: 50px;
-    margin-bottom: 0;
   }
 }
 
@@ -209,6 +115,8 @@ li.footer-list-item:last-child {
 
   .card-wrapper {
     flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   .card {
@@ -219,9 +127,5 @@ li.footer-list-item:last-child {
 @media (min-width: 1280px) {
   .main-content {
     grid-template-rows: 60vh;
-  }
-
-  .card {
-    margin: 0 70px;
   }
 }
